@@ -1,0 +1,77 @@
+﻿namespace Trans2QuikAdapter.Orders
+{
+    internal static class Keys
+    {
+        public static readonly string ClassCode = "CLASSCODE";
+        public static readonly string SecCode = "SECCODE";
+        public static readonly string Action = "ACTION";
+        public static readonly string FirmId = "FIRM_ID";
+        public static readonly string Account = "ACCOUNT";
+        public static readonly string ClientCode = "CLIENT_CODE";
+        public static readonly string Type = "TYPE";
+        public static readonly string MarketMakerOrder = "MARKET_MAKER_ORDER";
+        public static readonly string Operation = "OPERATION";
+        public static readonly string ExecutionCondition = "EXECUTION_CONDITION";
+        public static readonly string Quantity = "QUANTITY";
+        public static readonly string RepoValue = "REPOVALUE";
+        public static readonly string StartDiscount = "START_DISCOUNT";
+        public static readonly string LowerDiscount = "LOWER_DISCOUNT";
+        public static readonly string UpperDiscount = "UPPER_DISCOUNT";
+        public static readonly string Price = "PRICE";
+        public static readonly string StopPrice = "STOPPRICE";
+        public static readonly string StopOrderKind = "STOP_ORDER_KIND";
+        public static readonly string StopPriceClassCode = "STOPPRICE_CLASSCODE";
+        public static readonly string StopPriceSecCode = "STOPPRICE_SECCODE";
+        public static readonly string StopPriceCondition = "STOPPRICE_CONDITION";
+        public static readonly string LinkedOrderPrice = "LINKED_ORDER_PRICE";
+        public static readonly string ExpiryDate = "EXPIRY_DATE";
+        public static readonly string StopPrice2 = "STOPPRICE2";
+        public static readonly string MarketStopLimit = "MARKET_STOP_LIMIT";
+        public static readonly string MarketTakeProfit = "MARKET_TAKE_PROFIT";
+        public static readonly string IsActiveInTime = "IS_ACTIVE_IN_TIME";
+        public static readonly string ActiveFromTime = "ACTIVE_FROM_TIME";
+        public static readonly string ActiveToTime = "ACTIVE_TO_TIME";
+        public static readonly string Partner = "PARTNER";
+        public static readonly string OrderKey = "ORDER_KEY";
+        public static readonly string StopOrderKey = "STOP_ORDER_KEY";
+        public static readonly string TransId = "TRANS_ID";
+        public static readonly string SettleCode = "SETTLE_CODE";
+        public static readonly string Price2 = "PRICE2";
+        public static readonly string RepoTerm = "REPOTERM";
+        public static readonly string RepoRate = "REPORATE";
+        public static readonly string BlockSecurities = "BLOCK_SECURITIES";
+        public static readonly string RefundRate = "REFUNDRATE";
+        public static readonly string Comment = "COMMENT";
+        public static readonly string LargeTrade = "LARGE_TRADE";
+        public static readonly string CurrCode = "CURR_CODE";
+        public static readonly string ForAccount = "FOR_ACCOUNT";
+        public static readonly string SettleDate = "SETTLE_DATE";
+        public static readonly string KillIfLinkedOrderPartlyFilled = "KILL_IF_LINKED_ORDER_PARTLY_FILLED";
+        public static readonly string Offset = "OFFSET";
+        public static readonly string OffsetUnits = "OFFSET_UNITS";
+        public static readonly string Spread = "SPREAD";
+        public static readonly string SpreadUnits = "SPREAD_UNITS";
+        public static readonly string BaseOrderKey = "BASE_ORDER_KEY";
+        public static readonly string UseBaseOrderBalance = "USE_BASE_ORDER_BALANCE";
+        public static readonly string ActivateIfBaseOrderPartlyFilled = "ACTIVATE_IF_BASE_ORDER_PARTLY_FILLED";
+        public static readonly string BaseContract = "BASE_CONTRACT";
+        public static readonly string MoveOrdersMode = "MODE";
+        public static readonly string FirstOrderNumber = "FIRST_ORDER_NUMBER";
+        public static readonly string FirstOrderNewQuantity = "FIRST_ORDER_NEW_QUANTITY";
+        public static readonly string FirstOrderNewPrice = "FIRST_ORDER_NEW_ PRICE";
+        public static readonly string SecondOrderNumber = "SECOND_ORDER_ NUMBER";
+        public static readonly string SecondOrderNewQuantity = "SECOND_ORDER_NEW_QUANTITY";
+        public static readonly string SecondOrderNewPrice = "SECOND_ORDER_NEW_PRICE";
+        public static readonly string KillActiveOrders = "KILL_ACTIVE_ORDERS";
+        public static readonly string NegTradeOperation = "NEG_TRADE_OPERATION";
+        public static readonly string NegTradeNumber = "NEG_TRADE_NUMBER";
+        public static readonly string VolumeMn = "VOLUMEMN";
+        public static readonly string VolumePl = "VOLUMEPL";
+        public static readonly string Kfl = "KFL";
+        public static readonly string Kgo = "KGO";
+        public static readonly string UseKgo = "USE_KGO";
+        public static readonly string CheckLimits = "CHECK_LIMITS";
+        public static readonly string MatchRef = "MATCHREF";
+        public static readonly string Correction = "CORRECTION";
+    }
+}

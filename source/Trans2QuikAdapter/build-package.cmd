@@ -1,0 +1,1 @@
+..\Nuget\nuget.exe pack Trans2QuikAdapter.csproj -IncludeReferencedProjects -Build -Properties Configuration=Release

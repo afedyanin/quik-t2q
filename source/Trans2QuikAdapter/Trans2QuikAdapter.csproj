@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2550305B-225B-4720-9FA4-B0F8FAA6EC9A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Trans2QuikAdapter</RootNamespace>
+    <AssemblyName>Trans2QuikAdapter</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Orders\Helpers\Formats.cs" />
+    <Compile Include="Orders\Helpers\NameValueCodec.cs" />
+    <Compile Include="Orders\Helpers\StringExtension.cs" />
+    <Compile Include="Orders\Keys.cs" />
+    <Compile Include="Orders\OrderBuilder.cs" />
+    <Compile Include="Orders\ValueTypes\ExecutionCondition.cs" />
+    <Compile Include="Orders\ValueTypes\ExpiryDate.cs" />
+    <Compile Include="Orders\ValueTypes\ForAccount.cs" />
+    <Compile Include="Orders\ValueTypes\MoveOrdersMode.cs" />
+    <Compile Include="Orders\ValueTypes\Operation.cs" />
+    <Compile Include="Orders\ValueTypes\OrderAction.cs" />
+    <Compile Include="Orders\ValueTypes\OrderType.cs" />
+    <Compile Include="Orders\ValueTypes\StopOrderKind.cs" />
+    <Compile Include="Orders\ValueTypes\StopPriceCondition.cs" />
+    <Compile Include="Orders\ValueTypes\Units.cs" />
+    <Compile Include="Orders\ValueTypes\YesNo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transactions\Entities\OrderStatus.cs" />
+    <Compile Include="Transactions\Entities\TradeStatus.cs" />
+    <Compile Include="Transactions\Entities\TransactionReply.cs" />
+    <Compile Include="Transactions\EntityFactory.cs" />
+    <Compile Include="Transactions\Enums\OrderTime.cs" />
+    <Compile Include="Transactions\Enums\ResponseCode.cs" />
+    <Compile Include="Transactions\Enums\TradeTime.cs" />
+    <Compile Include="Transactions\Helpers\Extensions.cs" />
+    <Compile Include="Transactions\Helpers\ResponseHelper.cs" />
+    <Compile Include="Transactions\Import.cs" />
+    <Compile Include="Transactions\Response.cs" />
+    <Compile Include="Transactions\TradingGateway.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build-package.cmd" />
+    <None Include="Trans2QuikAdapter.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="trans2quik.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
