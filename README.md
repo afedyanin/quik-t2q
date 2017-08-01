@@ -50,7 +50,7 @@ Sample code:
 
 ## NuGet
 
-[NuGet package](https://www.nuget.org/packages/Trans2QuikAdapte)
+[NuGet package](https://www.nuget.org/packages/Trans2QuikAdapter)
 
 To install Trans2QuikAdapter, run the following command in the Package Manager Console
 
